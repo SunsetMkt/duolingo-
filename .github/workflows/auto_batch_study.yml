@@ -3,7 +3,7 @@ name: Batch Study
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '0 1 * * *'
 
 jobs:
   study:
@@ -18,4 +18,4 @@ jobs:
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: 10
+          LESSONS: 20
