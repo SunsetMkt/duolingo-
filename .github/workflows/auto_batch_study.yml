@@ -3,7 +3,7 @@ name: Batch Study
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 1,9 * * *'
 
 jobs:
   study:
